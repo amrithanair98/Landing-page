@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="author" content="zytheme" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Multi-purpose Business html5 landing page" />
+
+    <link href="./Monk_files/favicon.ico" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet" type="text/css" />
+
+    <link href="./Monk_files/vendor.css" rel="stylesheet" />
+    <link href="./Monk_files/style.css" rel="stylesheet" />
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MDF43VH');
+    </script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Monk Tech Lab</title>
+</head>
+
+<body class="body-scroll">
+
+    <noscript>
+      <title iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDF43VH" height="0" width="0" style="display:none;visibility:hidden"></title></iframe>
+    </noscript>
+
+
+    <div class="wrapper clearfix" id="wrapper">
+
+        <header class="header header-transparent header-sticky">
+            <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu">
+                <div class="container">
+                    <div style='margin-left: 20px;'>
+                    <img src="./Monk_files/monk.png" height="40" alt="image">
+                    <img src="./Monk_files/logo.png" height="40" alt="image">
+                    </div>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" data-scroll="scrollTo" href="#hero">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#Projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#Speciality">Our Speciality</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#testimonials">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#cta">Start Now</a></li>
+                        </ul>
+                        <div class="module-container">
+
+                            <div class="module module-cta">
+                                <a class="btn btn--white btn--arrows" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"><span>contact us  <span class="iconify" data-icon="cil:arrow-right" data-inline="false" data-width="22" data-height="22"></span></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="popup-contact-form">
+                            <div class="heading heading-5">
+                                <div class="heading-title">
+                                    <h1>Contact Us</h1>
+                                </div>
+                                <div class="heading-desc">Our technical support is available by phone or email from 10am to 7pm IST, Monday through Saturday.
+                                </div>
+                            </div>
+                            <div class="contact-body">
+                                <form class="contactForm mb-0" method="post" action="assets/php/contact.php">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" name="contact-name" placeholder="your name" required="required" />
+                                        </div>
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" name="contact-email" placeholder="your email" required="required" />
+                                        </div>
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" name="contact-phone" placeholder="your phone" required="required" />
+                                        </div>
+                                        <textarea name="Help" id="" cols="70" rows="5" placeholder="How can we help?" style="font-size: medium;"></textarea>
+                                        <div class="col-12">
+                                            <button class="btn--block btn btn--primary btn--arrows mt-20 mb-20"><span>Submit <span class="iconify" data-icon="line-md:arrow-right" data-inline="false" data-width="16" data-height="16"></span></span></button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="contact-result"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero bg-gradient" id="hero">
+            <div class="bg-section"><img src="./Monk_files/bg-gradient.svg" alt="background" /></div>
+            <div class="container">
+                <div class="hero-cotainer text--center">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+                            <div class="hero-content">
+                                <div class="hero-headline">Bringing product development expertise to every company</div>
+                                <div class="hero-bio">Let us build the technology, while you build the business.</div>
+                                <div class="hero-action text-center"><a class="btn btn--primary btn--rounded btn--arrows mx-auto" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"><span>Get in touch  <span class="iconify" data-icon="cil:arrow-right" data-inline="false" data-width="22" data-height="22"></span></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mockup">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><img class="img-fluid" src="./Monk_files/slide-1.svg" alt="illustration vector" /></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients" id="Projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                        <div class="heading text--center">
+                            <p class="heading-desc">
+                                <h2 class="heading-title">We love building products, and we are really good at it.</h2>
+
+                            </p>
+                            <p class="heading-desc">Seriously. Ask any of our clients</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="owl-carousel " data-slide="5" data-slide-res="3" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="800">
+
+                            <div class="client">
+                                <a href="https://www.freshtohome.com"><img alt="client-pic" src="./Monk_files/fresh-to-home.png"></a>
+                            </div>
+                            <div class="client">
+                                <a href="https://www.sampingan.co.id/"><img alt="client-pic" src="./Monk_files/sampingan.png"></a>
+                            </div>
+                            <div class="client">
+                                <a href="https://thehousemonk.com/"><img alt="client-pic" src="./Monk_files/thm.png"></a>
+                            </div>
+                            <div class="client">
+                                <a href="http://kitabhouse.herokuapp.com/"><img alt="client-pic" src="./Monk_files/kitab-house.png"></a>
+                            </div>
+                            <div class="client">
+                                <a href="http://commuvest.com/app"><img alt="client-pic" src="./Monk_files/commuvest.png"></a>
+                            </div>
+                            <div class="client">
+                                <a href=""><img alt="client-pic" src="./Monk_files/dodo-trak.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider-2"></div>
+            </div>
+            <section class="features text-center" id="feature">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                            <div class="heading heading-1 text--center">
+                                <h2 class="heading-title">We help you to Start Your Project</h2>
+                                <p class="heading-desc">Bringing tried and tested product development practices to your company</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-12 col-lg-4 ">
+                            <div class="feature-panel">
+                                <div class="feature-icon"><span class="iconify" data-icon="raphael:codetalk" data-inline="false" style="color: #e8505b;" data-width="90" data-height="85"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h3>Lets Talk, Desgin & Develop</h3>
+                                    <ul style="list-style-type:None">
+                                        <li style='text-align: left;'><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> Got an app idea? Hire us to turn it into an awesome app! We are at our best
+                                            when coming up with innovative ideas.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-12 col-lg-4 ">
+                            <div class="feature-panel active">
+                                <div class="feature-icon"><span class="iconify" data-icon="ps:work-case" data-inline="false" style="color: #e8505b;" data-width="91.5" data-height="76.59"></span></div>
+                                <div class="feature-content">
+                                    <h3>Your Vision, Our Work</h3>
+                                    <ul style="list-style-type:None">
+                                        <li style='text-align: left;'><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> Our mission at Monk Tech Lab is to help you create beautiful and functional
+                                            mobile and web apps.
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-12 col-lg-4 ">
+                            <div class="feature-panel">
+                                <div class="feature-icon"><span class="iconify" data-icon="mdi:lambda" data-inline="false" style="color: #e8505b;" data-width="91.5" data-height="79.59"></span></div>
+                                <div class="feature-content">
+                                    <h3>We are the Geeks!</h3>
+                                    <ul style="list-style-type:None" ;>
+                                        <li style='text-align: left;'><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> Our technical prowess combined with deep product understanding allows us to
+                                            build & ship products at lighthing speed.
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="services bg-gray" id="Speciality">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="service-card pt-40">
+                            <div class="heading heading-2">
+                                <h2 class="heading-title">Our Speciality <br /> Startup Central</h2>
+                                <p class="heading-desc">Help young companies with the early versions of their product.</p>
+                            </div>
+                            <div>
+                                <ul class="list-unstyled service-list pr-60">
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Concept Evolution</li>
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Beta Launch</li>
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; MVP</li>
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Rapid Prototyping</li>
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; terations</li>
+                                    <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; CI/CD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6"><img class="img-fluid service-img" src="./Monk_files/smb.svg" alt="vector" /></div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-gray">
+            <div class="container">
+                <div class="divider-1"></div>
+            </div>
+        </div>
+        <section class="services bg-gray" id="services2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6"><img class="img-fluid service-img" src="./Monk_files/start_up_central.svg" alt="vector" /></div>
+                    <div class="col-12 col-md-6">
+                        <div class="service-card pt-30">
+                            <div class="heading heading-2">
+                                <h2 class="heading-title">Enterprise Scaling</h2>
+                                <p class="heading-desc">Enable mature companies to scale systems through robust ERPs</p>
+                            </div>
+                            <ul class="list-unstyled service-list pr-60">
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Field Force Management</li>
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Analytics</li>
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; </span> Accounts & Finance</li>
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Communications</li>
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Task Management</li>
+                                <li><span class="iconify" data-icon="bi:check2-circle" data-inline="false" style="color: #e8505b;" data-width="16" data-height="16"></span> &nbsp; Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mockup">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2 class="heading-title"> Technologies we are really good at
+                    </h2>
+                <div class="row">
+                    <div class="col"><img class="img-fluid service-img" src="./Monk_files/stack.webp" alt="vector" /></div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="testimonials bg-gray" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="owl-carousel carousel-dots carousel-navs " data-slide="1" data-slide-res="1" data-autoplay="false" data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="800">
+                            <div class="testimonial-panel">
+                                <div class="testimonial-body">
+                                    <div class="testimonial-icon"><span class="iconify" data-icon="el:quote-alt" data-inline="false" style="color: #e8505b;" data-width="60" data-height="60"></span></div>
+                                    <p>"The team is super quick and responsive. Extremely professional all throughout. We love the output we have received! Would strongly recommend them"
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-img"><img src="./Monk_files/wisnu.jpeg" alt="avatar author" /></div>
+                                        <p><strong>Wisnu Nugrahadi</strong><br>
+                                            <em>Co-founder Sampingan(Indonesia)</em></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-panel">
+                                <div class="testimonial-body">
+                                    <div class="testimonial-icon"><span class="icon-left-quotes-sign"></span></div>
+                                    <p>"Fantastic job by the team! Not only did they build our product, they educated us on how to build products, which was an incredible learning for us. "</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-img"><img src="./Monk_files/asif-junaid.jpeg" alt="author" /></div>
+                                        <p><strong>Asif Junaid</strong><br>
+                                            <em>Founder, Commuvest (UAE)</em></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-panel">
+                                <div class="testimonial-body">
+                                    <div class="testimonial-icon"><span class="icon-left-quotes-sign"></span></div>
+                                    <p>"The team had experts in every field of technology interacting with us and has been doing a wonderful job in creating and deploying technology solutions."</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-img"><img src="./Monk_files/saurab.jpeg" alt="author" /></div>
+                                        <p><strong>Saurabh Odhyan</strong><br>
+                                            <em>Head of Technology, Fresh2Home</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="cta text-center" id="cta">
+            <div class="bg-section"><img src="./Monk_files/bg-gradient-2.svg" alt="background" /></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 text-center">
+                        <h3>Monk Tech Labs - A Division of TheHouseMonk</h3>
+                        <p>Bringing tried and tested product development practices to your company</p>
+                        <div>
+                            <p>
+                                Our team built pioneering technology that helps 1000s of customers maintain and manage real estate properties. Now, we leverage our learnings to help other companies serve their customers
+                            </p>
+                        </div>
+
+                        <a class="btn btn--primary btn--arrows mx-auto" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"> <span>get started now <span class="iconify" data-icon="cil:arrow-right" data-inline="false" data-width="22" data-height="22"></span></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="footer footer-5" id="footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 text--center">
+                        <div class="footer--copyright"><span>2021 &copy; <a href="https://monktechlabs.com/">Monk Tech Lab</a>. All rights reserved.</span></div>
+
+                    </div>
+                </div>
+
+        </footer>
+        </div>
+
+
+        <script src="./Monk_files/jquery-3.4.1.min.js"></script>
+        <script src="./Monk_files/vendor.js"></script>
+        <script src="./Monk_files/functions.js"></script>
+</body>
+
+</html>
